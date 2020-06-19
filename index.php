@@ -82,9 +82,9 @@ function submitAssessment()
   $response = HTTP_Client::post(
     'https://www.coredna.com/assessment-endpoint.php',
     [
-      'name' => 'empty',
-      'email' => 'empty',
-      'url' => 'empty',
+      'name' => 'Andrew Savetchuk',
+      'email' => 'andrew.savetchuk@gmail.com',
+      'url' => 'https://github.com/AndrewSavetchuk/php-http-client',
     ],
     [
       'Authorization' => 'Bearer ' . $tokenResponse->getBody(),
@@ -99,7 +99,7 @@ function submitAssessment()
  * Entry point.
  */
 try {
-  optionsRequest1();
+  submitAssessment();
 } catch (Exception $e) {
   Utils::dumpPretty($e);
 }

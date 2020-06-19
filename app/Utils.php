@@ -6,7 +6,7 @@
 class Utils
 {
   /**
-   * Making PHP var_dump() values display one line per value.
+   * Making the dump output display one line per value.
    *
    * @param $data
    */

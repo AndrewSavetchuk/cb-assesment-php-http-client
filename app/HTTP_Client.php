@@ -5,13 +5,12 @@ require_once('app/HTTP_Response.php');
 /**
  * Class HTTP_Client
  *
- * Light weight HTTP client capable of the following:
+ * Lightweight HTTP client capable of the following:
  *
  * Send HTTP requests to the given URL using different methods, such as GET, POST, etc.
  * Send JSON payloads
  * Send custom HTTP headers
- * All JSON payloads must be passed in as associative arrays
- * Erroneous HTTP response codes (e.g. 4xx, 5xx) must throw an exception
+ * Throw an exception for erroneous HTTP response codes (e.g. 4xx, 5xx)
  */
 class HTTP_Client
 {

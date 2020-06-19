@@ -3,12 +3,12 @@
 /**
  * Class HTTP_Response
  *
- * Light weight HTTP response capable of the following:
+ * Lightweight HTTP response capable of the following:
  *
  * Retrieve HTTP response payloads
  * Retrieve HTTP response headers
- * Any JSON conversion errors must throw an exception
- * All JSON payloads must be returned as associative arrays
+ * Throw an exception for any JSON conversion errors
+ * Return all JSON payloads as associative arrays
  */
 class HTTP_Response
 {
